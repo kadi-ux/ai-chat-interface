@@ -1,120 +1,159 @@
-# AI Chat Interface
+# AI Chat Interface 🤖💬
 
-[![University](https://img.shields.io/badge/University-IU%20International%20University-blue)](https://iu.org)
-[![Course](https://img.shields.io/badge/Course-DLBCSPJWD01-green)](https://github.com/NikVince/ai-chat-interface)
-[![Assignment](https://img.shields.io/badge/Assignment-Portfolio%20Project-orange)](https://github.com/NikVince/ai-chat-interface)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Phase](https://img.shields.io/badge/Development%20Phase-1%20of%203-red)](https://github.com/NikVince/ai-chat-interface)
+![GitHub release](https://img.shields.io/github/release/kadi-ux/ai-chat-interface.svg?style=flat-square&color=blue) [![Download](https://img.shields.io/badge/Download%20Latest%20Release-blue.svg?style=flat-square)](https://github.com/kadi-ux/ai-chat-interface/releases)
 
-## 📚 Academic Context
+Welcome to the AI Chat Interface repository! This project offers a privacy-first chat solution powered by OpenAI. Users can securely communicate while maintaining control over their data. Below, you'll find detailed information about the project, its features, and how to get started.
 
-This project is developed as part of the **Project Java and Web Development (DLBCSPJWD01)** portfolio assignment at **IU International University**. The assignment follows a structured three-phase approach designed to demonstrate comprehensive understanding of modern full-stack web development principles.
+## Table of Contents
 
-### 🎯 Assignment Overview
+1. [Overview](#overview)
+2. [Features](#features)
+3. [Technologies Used](#technologies-used)
+4. [Installation](#installation)
+5. [Usage](#usage)
+6. [API Documentation](#api-documentation)
+7. [Contributing](#contributing)
+8. [License](#license)
+9. [Contact](#contact)
 
-**Student:** Nikolas Daniel Vincenti  
-**Course:** DLBCSPJWD01 - Project Java and Web Development  
-**Assignment Type:** Portfolio Project (3 Phases)  
-**Academic Year:** 2025  
+## Overview
 
-### 📋 Project Scope
+The AI Chat Interface is designed with user privacy in mind. Users provide their own OpenAI API keys, ensuring that no data is stored on our servers. Built using React and Vite for the frontend, and Node.js with Express for the backend, this project allows for real-time messaging and a responsive design. 
 
-The assignment requires developing a **functioning web application** that demonstrates:
+This repository aims to serve as a comprehensive solution for those looking to integrate AI chat functionality while prioritizing user privacy.
 
-- **Frontend Development**: Responsive user interface using modern frameworks
-- **Backend Integration**: Server-side communication and API handling
-- **Dynamic Functionality**: Interactive features and real-time user interaction
-- **Security Implementation**: Best practices for secure web development
-- **Documentation**: Professional code documentation and architecture explanation
+## Features
 
-## 🔍 Project Concept
+- **Privacy-First Approach**: Users maintain control of their data by using their own OpenAI API keys.
+- **Real-Time Messaging**: Experience seamless communication with real-time updates.
+- **Responsive Design**: The interface adapts to different screen sizes, ensuring a smooth experience on both mobile and desktop devices.
+- **Secure API Proxy**: The backend securely handles API requests, protecting user data.
+- **Easy Setup**: The project is straightforward to install and run locally.
 
-### Privacy-First AI Chat Interface
+## Technologies Used
 
-This application addresses the growing need for **secure AI assistance** while maintaining complete user privacy and cost transparency. Unlike traditional AI chat services, users provide their own OpenAI API keys, ensuring:
+- **Frontend**: React, Vite, Tailwind CSS
+- **Backend**: Node.js, Express
+- **API**: OpenAI API
+- **Database**: None (no data stored on servers)
 
-- ✅ **Complete Privacy**: No conversations stored on third-party servers
-- ✅ **Cost Control**: Direct API usage with transparent pricing
-- ✅ **Security**: API keys handled through secure proxy patterns
-- ✅ **Flexibility**: Model selection (GPT-3.5-turbo, GPT-4) based on user needs
+## Installation
 
-### 🎯 Target Audience
+To get started with the AI Chat Interface, follow these steps:
 
-- **Developers** seeking coding assistance with privacy guarantees
-- **Students** requiring educational support without data concerns  
-- **Professionals** needing AI-powered content creation with cost control
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/kadi-ux/ai-chat-interface.git
+   ```
 
-## 🏗️ Technical Requirements
+2. **Navigate to the Project Directory**:
+   ```bash
+   cd ai-chat-interface
+   ```
 
-### Core Technologies
-- **Frontend**: React 18 + Vite + Tailwind CSS
-- **Backend**: Node.js + Express.js
-- **Integration**: OpenAI API
-- **Security**: Secure API proxy implementation
+3. **Install Dependencies**:
+   For the frontend:
+   ```bash
+   cd frontend
+   npm install
+   ```
 
-### Assignment Criteria
-- ✅ **Two Dynamic Aspects**: Real-time chat + Settings management
-- ✅ **Responsive Design**: Mobile-first approach with Tailwind CSS
-- ✅ **Frontend-Backend Communication**: RESTful API integration
-- ✅ **Code Documentation**: Professional development standards
-- ✅ **Architecture Documentation**: Technical decision explanations
+   For the backend:
+   ```bash
+   cd backend
+   npm install
+   ```
 
-## 📚 Learning Objectives
+4. **Set Up Environment Variables**:
+   Create a `.env` file in the backend directory and add your OpenAI API key:
+   ```env
+   OPENAI_API_KEY=your_api_key_here
+   ```
 
-This project demonstrates mastery of:
+5. **Run the Application**:
+   Start the backend server:
+   ```bash
+   cd backend
+   npm start
+   ```
 
-### Technical Skills
-- **Modern React Development**: Functional components, hooks, state management
-- **Backend API Design**: Express.js routing, middleware, security implementation
-- **Full-Stack Integration**: Frontend-backend communication patterns
-- **Security Best Practices**: API key handling, input validation, rate limiting
-- **Responsive Web Design**: Mobile-first development with utility frameworks
+   Start the frontend development server:
+   ```bash
+   cd frontend
+   npm run dev
+   ```
 
-### Professional Skills
-- **Project Planning**: Three-phase development methodology
-- **Documentation**: Technical writing and code documentation
-- **Version Control**: Git workflow and GitHub repository management
-- **Presentation**: Technical communication and demo preparation
+Now, you can access the application at `http://localhost:3000`.
 
-## 🚀 Development Phases
+## Usage
 
-### Phase 1: Conception ✅
-- **Deliverable**: 1-page conceptual design document
-- **Focus**: Architecture planning, technology selection, user requirements
-- **Status**: Completed
+Once the application is running, you can interact with the chat interface. Here’s how to use it:
 
-### Phase 2: Development & Presentation 🔄
-- **Deliverable**: 10-slide presentation + GitHub repository + 2-min demo
-- **Focus**: Core implementation, documentation, working prototype
-- **Status**: In Progress
+1. **Open the Chat Interface**: Navigate to the URL where the frontend is running (usually `http://localhost:3000`).
+2. **Enter Your API Key**: You will be prompted to enter your OpenAI API key. This step is crucial as it allows the application to connect to the OpenAI API securely.
+3. **Start Chatting**: Type your messages in the chat box and press enter. The AI will respond in real-time.
 
-### Phase 3: Finalization 📋
-- **Deliverable**: 2-page abstract + final submission + complete documentation
-- **Focus**: Optimization, final testing, comprehensive documentation
-- **Status**: Pending
+For detailed usage instructions and examples, check the [Releases section](https://github.com/kadi-ux/ai-chat-interface/releases).
 
-## 🎓 Educational Value
+## API Documentation
 
-This project serves as a **capstone experience** integrating knowledge from multiple areas:
+The AI Chat Interface uses the OpenAI API for generating responses. Here’s a brief overview of how it works:
 
-- **Software Engineering**: Architecture design, code organization, testing
-- **Web Technologies**: Modern framework usage, responsive design, API integration
-- **Security**: Authentication patterns, secure communication, data protection
-- **Project Management**: Agile methodology, documentation, presentation skills
+- **Endpoint**: The backend serves as a proxy for OpenAI API requests. All requests from the frontend are sent to the backend, which then forwards them to OpenAI.
+- **Request Format**: The request body should include the user’s message and any additional parameters required by the OpenAI API.
+- **Response Format**: The backend will return the AI’s response, which the frontend will display in the chat interface.
 
-## 📝 Academic Evaluation
+### Example Request
 
-The project is evaluated based on:
-- **Problem Solving** (10%): Clear scope and technical approach
-- **Methodology** (20%): Architecture decisions and technology choices  
-- **Implementation Quality** (40%): Code quality, documentation, functionality
-- **Creativity** (20%): Solution originality and objective fulfillment
-- **Formal Requirements** (10%): Submission compliance and documentation
+```json
+{
+  "message": "Hello, how are you?",
+  "parameters": {
+    "max_tokens": 150,
+    "temperature": 0.7
+  }
+}
+```
 
-## 🤝 Academic Integrity
+### Example Response
 
-This project represents original work completed as part of the IU International University curriculum. All external resources, libraries, and references are properly documented and attributed according to academic standards.
+```json
+{
+  "response": "I'm just a computer program, but I'm here to help you!"
+}
+```
 
----
+## Contributing
 
-**Note**: This README will be updated throughout the development phases to include implementation details, setup instructions, and deployment guidelines as the project progresses.
+We welcome contributions to the AI Chat Interface! If you want to help improve the project, please follow these steps:
+
+1. **Fork the Repository**: Click the "Fork" button at the top right of the page.
+2. **Create a New Branch**: Use a descriptive name for your branch.
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. **Make Your Changes**: Implement your feature or fix a bug.
+4. **Commit Your Changes**:
+   ```bash
+   git commit -m "Add your message here"
+   ```
+5. **Push to Your Fork**:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+6. **Create a Pull Request**: Go to the original repository and submit your pull request.
+
+Please ensure that your code follows the project's style guidelines and that you test your changes before submitting.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any questions or feedback, feel free to reach out:
+
+- **GitHub**: [kadi-ux](https://github.com/kadi-ux)
+- **Email**: kadi@example.com
+
+Thank you for checking out the AI Chat Interface! We hope you enjoy using it. For the latest updates and releases, visit the [Releases section](https://github.com/kadi-ux/ai-chat-interface/releases).
